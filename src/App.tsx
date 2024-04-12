@@ -1,6 +1,6 @@
 import './App.css';
 import { Avatar } from '@mui/material';
-import AvatarImage from './assets/avatar.jpg';
+import AvatarImage from './assets/avatar-w-joker.jpg';
 import styled from 'styled-components';
 import HeaderNavigation from './components/Header';
 
@@ -14,7 +14,7 @@ const App = () => {
           src={AvatarImage}
           sx={{ width: 150, height: 150 }}
         />
-        <h1>Software Developer</h1>
+        <h1>Software Developer & Dog Owner</h1>
         <h2>Laura Forsblom</h2>
       </InfoContainer>
     </HomePageWrapper>
