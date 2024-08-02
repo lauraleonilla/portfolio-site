@@ -1,23 +1,25 @@
 import './App.css';
+
 import { Avatar } from '@mui/material';
-import AvatarImage from './assets/avatar-w-joker.jpg';
 import styled from 'styled-components';
+
+import AvatarImage from './assets/avatar-w-joker.jpg';
 import HeaderNavigation from './components/Header';
 
-const App = () => {
+const App: React.FC  = (): JSX.Element => {
   return (
-    <HomePageWrapper>
-      <HeaderNavigation />
-      <InfoContainer>
-        <Avatar
-          alt='Laura F'
-          src={AvatarImage}
-          sx={{ width: 150, height: 150 }}
-        />
-        <h1>Software Developer & Dog Owner</h1>
-        <h2>Laura Forsblom</h2>
-      </InfoContainer>
-    </HomePageWrapper>
+        <HomePageWrapper>
+          <HeaderNavigation />
+          <InfoContainer>
+            <Avatar
+              alt='Laura F'
+              src={AvatarImage}
+              sx={{ width: 150, height: 150 }}
+            />
+            <h1>Software Developer & Dog Owner</h1>
+            <h2>Laura Forsblom</h2>
+          </InfoContainer>
+        </HomePageWrapper>
   );
 };
 

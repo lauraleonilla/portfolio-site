@@ -1,6 +1,8 @@
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import Tab from '@mui/material/Tab';
+import Tabs from '@mui/material/Tabs';
+import { Link } from 'react-router-dom';
+
 
 function a11yProps(index: number) {
   return {
@@ -18,7 +20,13 @@ export default function HeaderNavigation() {
           indicatorColor='secondary'
           textColor='inherit'
         >
-          <Tab label='Home' {...a11yProps(0)} />
+          <Link to={'/'}>
+            <Tab label='Home' {...a11yProps(0)} />
+          </Link>
+          <Link to={'/blog'}>
+          <Tab label='Blog' {...a11yProps(1)} />
+          </Link>
+          <Tab label='About' {...a11yProps(2)} />
         </Tabs>
       </Box>
     </Box>
