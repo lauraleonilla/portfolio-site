@@ -26,7 +26,9 @@ export default function HeaderNavigation() {
           <Link to={'/blog'}>
           <Tab label='Blog' {...a11yProps(1)} />
           </Link>
+             <Link to={'/about'}>
           <Tab label='About' {...a11yProps(2)} />
+             </Link>
         </Tabs>
       </Box>
     </Box>
