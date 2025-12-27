@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 
 import HeaderNavigation from '../components/Header';
 import {
   BlogContainer,
+  BlogPageWrapper,
   BlogTitle,
   BlogTitleContainer,
 } from '@/styles/Blog.styled';
@@ -64,10 +64,5 @@ const Blog = (): React.JSX.Element => {
     </BlogPageWrapper>
   );
 };
-
-const BlogPageWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-`;
 
 export default Blog;
