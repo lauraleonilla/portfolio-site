@@ -31,7 +31,7 @@ const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 4rem;
+  margin: 4rem;
 `;
 
 export default App;
